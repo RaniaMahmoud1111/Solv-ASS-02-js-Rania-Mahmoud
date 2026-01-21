@@ -17,6 +17,7 @@ document.writeln("<ul style='list-style-type:none;'> <li><b><u> Name:  </u></b> 
 */
 
 //Q 05
+/*
 let fullName;
 let nameFormat;
 let emailFormat;
@@ -37,4 +38,24 @@ do{
 }while( !em.match(emailFormat) );
 
 document.writeln("<h3>full name: "+fullName +"<br/>email: "+em +" <h3>")
+*/
 
+//Q 01 on String 
+//1.1
+let st=prompt("enter the string ");
+let letter=prompt("enter a letter need to check");
+
+var res=confirm("Are you consider the Case Sensative ? ");
+
+if(!res){
+    st=st.toLowerCase();//ignore case sensative 
+    letter=letter.toLowerCase();
+}
+var count=0;
+
+
+for(let i=0;i<st.length ; i++){
+    if(st[i]===letter)
+    count++; }
+
+alert(letter+" is repeated "+count+" times");
