@@ -11,3 +11,14 @@ console.log(HighDegr);
 //1.c
 let LesThn60= srt.filter((a)=>a<60);
 console.log(LesThn60);
+
+//Q 02
+
+//2.a 
+alert("Welcome to my site")
+//2.b
+let userName=prompt("Enter your name !");
+//here the document.write replace the content of page with Welcome with person name 
+document.writeln("<h3> Welcome " +userName + "</h3>");
+
+
