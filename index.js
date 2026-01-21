@@ -12,6 +12,7 @@ console.log(HighDegr);
 let LesThn60= srt.filter((a)=>a<60);
 console.log(LesThn60);
 
+
 //Q 02
 
 //2.a 
@@ -20,5 +21,14 @@ alert("Welcome to my site")
 let userName=prompt("Enter your name !");
 //here the document.write replace the content of page with Welcome with person name 
 document.writeln("<h3> Welcome " +userName + "</h3>");
+
+
+//Q 03
+let em;
+do{
+ em=prompt("Please enter your email !");
+
+}while( em.indexOf('@')=== -1 ||  em.indexOf('@')===0  ||  em.indexOf('@')===em.length-1  );
+
 
 
