@@ -42,6 +42,7 @@ document.writeln("<h3>full name: "+fullName +"<br/>email: "+em +" <h3>")
 
 //Q 01 on String 
 //1.1
+/*
 let st=prompt("enter the string ");
 let letter=prompt("enter a letter need to check");
 
@@ -59,3 +60,27 @@ for(let i=0;i<st.length ; i++){
     count++; }
 
 alert(letter+" is repeated "+count+" times");
+*/
+
+//1.2
+let word = prompt("enter a word ");
+
+var checkCS = confirm("Are you consider the Case Sensative ? ");
+
+if (!checkCS) {
+    word = word.toLowerCase();//ignore case sensative 
+}
+
+var flag = 0;
+for (let j = 0; j < word.length / 2; j++) {
+    if (word[j] != word[word.length - 1 - j]) {
+        flag = 1;
+        break;
+    }
+
+}
+if (flag === 1)
+    alert(word + " is not palindrom");
+else if (flag === 0) {
+    alert(word + " is a palindrom");
+}
