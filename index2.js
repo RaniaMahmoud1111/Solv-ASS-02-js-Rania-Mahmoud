@@ -63,6 +63,7 @@ alert(letter+" is repeated "+count+" times");
 */
 
 //1.2
+/*
 let word = prompt("enter a word ");
 
 var checkCS = confirm("Are you consider the Case Sensative ? ");
@@ -83,4 +84,22 @@ if (flag === 1)
     alert(word + " is not palindrom");
 else if (flag === 0) {
     alert(word + " is a palindrom");
+}*/
+
+
+//1.3
+let line = prompt("enter the text to find the biggest word in length ");
+
+line = line.split(" ");
+let mx = -10000;
+let t = 0;
+for (z = 0; z < line.length; z++) {
+    if (mx < line[z].length) {
+        mx = line[z].length;
+        t = z;
+    }
 }
+
+alert("the first word of the biggest length is : " + line[t]);
+
+
